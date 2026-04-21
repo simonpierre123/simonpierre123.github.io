@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaston NDJANANG | Ingénieur Génie Logiciel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0061ff;
+            --secondary: #60efff;
+            --dark: #0f172a;
+            --light-bg: #f8fafc;
+        }
+
+        body { font-family: 'Inter', sans-serif; color: #334155; background-color: white; line-height: 1.6; }
+
+        /* Header Gradient */
+        .hero-section {
+            background: radial-gradient(circle at top right, var(--secondary), transparent), 
+                        linear-gradient(135deg, var(--dark) 0%, #1e293b 100%);
+            color: white;
+            padding: 100px 0 80px;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
+        .btn-primary { background: var(--primary); border: none; padding: 12px 30px; font-weight: 600; border-radius: 8px; }
+        .btn-outline-light { border-radius: 8px; padding: 12px 30px; border: 1.5px solid rgba(255,255,255,0.3); }
+
+        .section-title-container { margin-bottom: 50px; }
+        .section-title-container h2 { font-weight: 700; color: var(--dark); position: relative; display: inline-block; }
+        .section-title-container h2::after {
+            content: ""; position: absolute; width: 50%; height: 4px; background: var(--primary); bottom: -10px; left: 25%; border-radius: 2px;
+        }
+
+        /* Skill Cards */
+        .skill-card {
+            background: white; border-radius: 16px; padding: 30px; height: 100%;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            transition: all 0.3s ease; border: 1px solid #e2e8f0;
+        }
+        .skill-card:hover { transform: translateY(-10px); box-shadow: 0 20px 30px rgba(0,0,0,0.1); border-color: var(--primary); }
+        .skill-card i { font-size: 2.5rem; margin-bottom: 20px; color: var(--primary); }
+
+        /* Timeline */
+        .exp-box {
+            border-left: 3px solid #e2e8f0; padding-left: 35px; margin-bottom: 50px; position: relative;
+        }
+        .exp-box::before {
+            content: ""; position: absolute; width: 20px; height: 20px; background: var(--primary);
+            left: -12px; top: 0; border-radius: 50%; border: 4px solid white; box-shadow: 0 0 0 3px #e2e8f0;
+        }
+
+        .badge-tech { background: #eff6ff; color: var(--primary); font-weight: 500; border: 1px solid #dbeafe; padding: 5px 12px; border-radius: 6px; font-size: 0.85rem; }
+
+        footer { background: var(--dark); color: #94a3b8; padding: 60px 0 30px; }
+        
+        .contact-icon { width: 45px; height: 45px; line-height: 45px; background: rgba(255,255,255,0.1); border-radius: 50%; display: inline-block; transition: 0.3s; }
+        .contact-icon:hover { background: var(--primary); color: white; transform: rotate(360deg); }
+    </style>
+</head>
+<body>
+
+<header class="hero-section">
+    <div class="container text-center text-md-start">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <span class="badge bg-primary mb-3 px-3 py-2">Disponible pour de nouveaux défis</span>
+                <h1 class="display-3 fw-bold mb-3">NDJANANG Gaston Gildas</h1>
+                <p class="lead mb-4 opacity-90">Ingénieur en Génie Logiciel spécialisé dans le développement <strong>Full Stack</strong> & la <strong>Gestion de Projets IT</strong>. Basé à Douala.</p>
+                <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
+                    <a href="mailto:gastondjanang8@gmail.com" class="btn btn-primary"><i class="fas fa-paper-plane me-2"></i>Me contacter</a>
+                    <a href="https://github.com/simonpierre123" target="_blank" class="btn btn-outline-light"><i class="fab fa-github me-2"></i>Mon GitHub</a>
+                </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block text-center text-white-50">
+                <i class="fas fa-laptop-code fa-10x opacity-25"></i>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="py-5" id="profil">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <div class="section-title-container">
+                    <h2>Profil Professionnel</h2>
+                </div>
+                <p class="lead text-muted px-lg-5">
+                    Expert en analyse de besoins et conception d'architectures logicielles. 
+                    De la <strong>Blockchain</strong> aux systèmes <strong>Hospitaliers</strong>, j'accompagne les entreprises dans leur transformation numérique avec des solutions scalables et sécurisées.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light shadow-inner">
+    <div class="container">
+        <div class="section-title-container text-center">
+            <h2>Compétences Techniques</h2>
+        </div>
+        <div class="row g-4 mt-2">
+            <div class="col-md-4 col-lg-3">
+                <div class="skill-card">
+                    <i class="fas fa-layer-group"></i>
+                    <h4>Développement</h4>
+                    <p class="small text-muted">PHP (Laravel, CodeIgniter), Flutter, JavaScript (Angular), SQL.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="skill-card">
+                    <i class="fas fa-gears"></i>
+                    <h4>Infrastructure</h4>
+                    <p class="small text-muted">Docker, CI/CD (GitHub Actions), Linux Server, DNS Bind9.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="skill-card">
+                    <i class="fas fa-diagram-project"></i>
+                    <h4>Gestion & Méthode</h4>
+                    <p class="small text-muted">Agile/Scrum, UML, MERISE, IT Project Management.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="skill-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h4>Cyber-Sécurité</h4>
+                    <p class="small text-muted">CompTIA Security+ (En cours), PenTesting, OpenClassrooms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container py-5">
+        <div class="section-title-container text-center">
+            <h2>Parcours Professionnel</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                
+                <div class="exp-box">
+                    <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+                        <h4 class="mb-0">Bourse Nationale des Déchets (BND)</h4>
+                        <span class="badge bg-dark">2026 – Présent</span>
+                    </div>
+                    <h6 class="text-primary fw-bold mb-3">Assistant Chef de Projet Technique</h6>
+                    <ul class="text-muted small">
+                        <li>Pilotage et suivi technique de la plateforme nationale.</li>
+                        <li>Rédaction des cahiers des charges et coordination des équipes techniques.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-box">
+                    <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+                        <h4 class="mb-0">RED PLAST SARL – ECOCOLLECT</h4>
+                        <span class="badge bg-outline-dark">2025 – 2026</span>
+                    </div>
+                    <h6 class="text-primary fw-bold mb-3">Développeur Full Stack</h6>
+                    <p class="text-muted small mb-3">Conception UML et développement de l’application mobile de collecte des déchets plastiques au Cameroun.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge-tech">Laravel</span><span class="badge-tech">Flutter</span><span class="badge-tech">CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="exp-box">
+                    <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+                        <h4 class="mb-0">KATIKA WEB3</h4>
+                        <span class="badge bg-outline-dark">2022 – 2023</span>
+                    </div>
+                    <h6 class="text-primary fw-bold mb-3">Développeur Full Stack Principal</h6>
+                    <p class="text-muted small">Intégration multi-blockchain (Solana, BTC, ETH) et système de transferts internationaux.</p>
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-outline-primary btn-sm rounded-pill" data-bs-toggle="collapse" data-bs-target="#olderExp">Afficher l'historique complet</button>
+                </div>
+
+                <div class="collapse mt-4" id="olderExp">
+                    <div class="exp-box border-secondary">
+                        <h5>Universal Software – Hospisoft</h5>
+                        <p class="text-muted small">Maintenance système hospitalier et plateforme RDV Essos.</p>
+                    </div>
+                    <div class="exp-box border-secondary">
+                        <h5>MYLE-AFRIKA</h5>
+                        <p class="text-muted small">Back-end Dev sur <a href="https://medisoftcare.com" class="text-primary">medisoftcare.com</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container text-center">
+        <h2 class="text-white mb-4">On travaille ensemble ?</h2>
+        <div class="d-flex justify-content-center gap-4 mb-5">
+            <a href="tel:+237694677454" class="contact-icon text-white"><i class="fas fa-phone"></i></a>
+            <a href="mailto:gastondjanang8@gmail.com" class="contact-icon text-white"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/gaston-ndjanang-3461a5215" class="contact-icon text-white"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <hr class="opacity-25 mb-4">
+        <p class="small mb-0">&copy; 2026 NDJANANG Gaston Gildas. Ingénieur diplômé de l'ENSET Douala.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
